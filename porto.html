@@ -5,7 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <title>Portfolio · Ahmad H. Mustofa</title>
   <link rel="stylesheet" href="porto.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="porto-v2.css">
 </head>
 
 <body>
@@ -21,7 +25,14 @@
       </div>
     </div>
   </nav>
-  <div class="pt-5 pb-2" style="">
+  <header class="hero">
+    <div class="container">
+      <h1>Portfolio</h1>
+      <p class="lead">Android apps I have built and maintained, from enterprise attendance and field operations to on-device face recognition.</p>
+      <nav class="jump" aria-label="Sections"><a href="#jds">PT Jelajah Data Semesta</a><a href="#earlier">Earlier work</a><a href="#section_skp">Personal projects</a></nav>
+    </div>
+  </header>
+  <div class="section-head pt-5 pb-2" style="" id="jds">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -30,7 +41,7 @@
       </div>
     </div>
   </div>
-  <div class="pt-5" style="">
+  <div class="project pt-5" style="">
     <div class="container">
       <div class="row">
         <div class="mr-auto order-2 order-md-1 d-flex flex-grow-0 col-md-4 align-items-center justify-content-center">
@@ -58,7 +69,7 @@
           <p class="text-muted mb-1">10K+ downloads · 4.3★</p>
           <p class="">Employee attendance platform for enterprise clients: face-recognition clock-in with liveness checks, beacon check-in, leave requests, e-signed documents, room booking and CCTV. Split into feature modules and moved to Jetpack Compose and Hilt, with Baseline Profiles for faster startup.</p>
           <div class="row text-muted">
-            <div class="col-12 p-2"> <a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Jetpack Compose</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Hilt</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Multi-module</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">CameraX</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">ML Kit</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Face Recognition</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Beacon</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Baseline Profiles</a> </div>
+            <div class="col-12 p-2"> <span class="tag">Jetpack Compose</span><span class="tag">Hilt</span><span class="tag">Multi-module</span><span class="tag">CameraX</span><span class="tag">ML Kit</span><span class="tag">Face Recognition</span><span class="tag">Beacon</span><span class="tag">Baseline Profiles</span> </div>
           </div>
           <div class="row text-muted">
             <div class="col-md-12">
@@ -71,7 +82,7 @@
       </div>
     </div>
   </div>
-  <div class="pt-5" style="">
+  <div class="project pt-5" style="">
     <div class="container">
       <div class="row">
         <div class="mr-auto order-2 order-md-1 d-flex flex-grow-0 col-md-4 align-items-center justify-content-center">
@@ -101,7 +112,7 @@
           <p class="text-muted mb-1">1K+ downloads · 4.6★</p>
           <p class="">The app network technicians use every day for trouble tickets, NOC workflows, service orders, maps and photo evidence. Maintained continuously since 2022.</p>
           <div class="row text-muted">
-            <div class="col-12 p-2"> <a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Jetpack Compose</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Multi-module</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Google Maps</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Charts</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">CameraX</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Fastlane</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">GitLab CI</a> </div>
+            <div class="col-12 p-2"> <span class="tag">Jetpack Compose</span><span class="tag">Multi-module</span><span class="tag">Google Maps</span><span class="tag">Charts</span><span class="tag">CameraX</span><span class="tag">Fastlane</span><span class="tag">GitLab CI</span> </div>
           </div>
           <div class="row text-muted">
             <div class="col-md-12">
@@ -114,7 +125,7 @@
       </div>
     </div>
   </div>
-  <div class="pt-5" style="">
+  <div class="project pt-5" style="">
     <div class="container">
       <div class="row">
         <div class="mr-auto order-2 order-md-1 d-flex flex-grow-0 col-md-4 align-items-center justify-content-center">
@@ -143,13 +154,13 @@
           <h2>VSAT Site Survey</h2>
           <p class="">Site-survey app for VSAT installations. Works offline with synced master data and uploads bulk photos and videos in the background. Fixed an out-of-memory crash in bulk upload and moved screens to Compose.</p>
           <div class="row text-muted">
-            <div class="col-12 p-2"> <a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Jetpack Compose</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">StateFlow</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Room</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">WorkManager</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Offline Sync</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Background Upload</a> </div>
+            <div class="col-12 p-2"> <span class="tag">Jetpack Compose</span><span class="tag">StateFlow</span><span class="tag">Room</span><span class="tag">WorkManager</span><span class="tag">Offline Sync</span><span class="tag">Background Upload</span> </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="pt-5" style="">
+  <div class="project pt-5" style="">
     <div class="container">
       <div class="row">
         <div class="mr-auto order-2 order-md-1 d-flex flex-grow-0 col-md-4 align-items-center justify-content-center">
@@ -175,7 +186,7 @@
           <p class="text-muted mb-1">50K+ downloads</p>
           <p class="">Customer app for an Indonesian ISP. A streaming AI chatbot over SSE and a real-time voice-call experience with a live waveform and call history, plus Google Play Billing, WiFi packages and promos.</p>
           <div class="row text-muted">
-            <div class="col-12 p-2"> <a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Jetpack Compose</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">SSE Streaming</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">AI Chatbot</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Voice Call</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Foreground Service</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Play Billing</a> </div>
+            <div class="col-12 p-2"> <span class="tag">Jetpack Compose</span><span class="tag">SSE Streaming</span><span class="tag">AI Chatbot</span><span class="tag">Voice Call</span><span class="tag">Foreground Service</span><span class="tag">Play Billing</span> </div>
           </div>
           <div class="row text-muted">
             <div class="col-md-12">
@@ -188,7 +199,7 @@
       </div>
     </div>
   </div>
-  <div class="pt-5" style="">
+  <div class="project pt-5" style="">
     <div class="container">
       <div class="row">
         <div class="mr-auto order-2 order-md-1 d-flex flex-grow-0 col-md-4 align-items-center justify-content-center">
@@ -215,13 +226,13 @@
           <h2>LISA</h2>
           <p class="">Android client for LISA, an AI agent assistant. Built its Compose design system with Material 3 Expressive motion, plus the agents and connectors screens.</p>
           <div class="row text-muted">
-            <div class="col-12 p-2"> <a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Jetpack Compose</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Material 3 Expressive</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Design System</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">AI Agents</a> </div>
+            <div class="col-12 p-2"> <span class="tag">Jetpack Compose</span><span class="tag">Material 3 Expressive</span><span class="tag">Design System</span><span class="tag">AI Agents</span> </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="pt-5" style="">
+  <div class="project pt-5" style="">
     <div class="container">
       <div class="row">
         <div class="mr-auto order-2 order-md-1 d-flex flex-grow-0 col-md-4 align-items-center justify-content-center">
@@ -249,7 +260,7 @@
           <p class="text-muted mb-1">500K+ downloads · 4.4★</p>
           <p class="">CCTV and WiFi consumer app. Google Play Billing subscriptions with base plans and promo offers, deep links, CCTV routes on maps, Play policy compliance and Fastlane release lanes.</p>
           <div class="row text-muted">
-            <div class="col-12 p-2"> <a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Play Billing</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Subscriptions</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Deep Links</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Google Maps</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Fastlane</a> </div>
+            <div class="col-12 p-2"> <span class="tag">Play Billing</span><span class="tag">Subscriptions</span><span class="tag">Deep Links</span><span class="tag">Google Maps</span><span class="tag">Fastlane</span> </div>
           </div>
           <div class="row text-muted">
             <div class="col-md-12">
@@ -262,7 +273,7 @@
       </div>
     </div>
   </div>
-  <div class="pt-5" style="">
+  <div class="project pt-5" style="">
     <div class="container">
       <div class="row">
         <div class="mr-auto order-2 order-md-1 d-flex flex-grow-0 col-md-4 align-items-center justify-content-center">
@@ -289,13 +300,13 @@
           <h2>MBG</h2>
           <p class="">Meal-distribution app with face registration and sync, and adaptive layouts for tablets. Built in Jetpack Compose.</p>
           <div class="row text-muted">
-            <div class="col-12 p-2"> <a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Jetpack Compose</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Adaptive Layouts</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Face Registration</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Offline Sync</a> </div>
+            <div class="col-12 p-2"> <span class="tag">Jetpack Compose</span><span class="tag">Adaptive Layouts</span><span class="tag">Face Registration</span><span class="tag">Offline Sync</span> </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="pt-5" style="">
+  <div class="project pt-5" style="">
     <div class="container">
       <div class="row">
         <div class="mr-auto order-2 order-md-1 d-flex flex-grow-0 col-md-4 align-items-center justify-content-center">
@@ -318,13 +329,13 @@
           <h2>MBG Face Recognition</h2>
           <p class="">On-device face pipeline for MBG kitchen staff and students. Registration uses RGB auto-capture: ML Kit detection checks face size and position inside a guide oval, then five shots are taken under a cycling full-screen colour mask. A face browser manages each person&#x27;s crops and embeddings. Recognition matches FaceNet-512 TensorFlow Lite embeddings by cosine similarity against each person&#x27;s averaged embedding.</p>
           <div class="row text-muted">
-            <div class="col-12 p-2"> <a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">ML Kit</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">TensorFlow Lite</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">FaceNet</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">CameraX</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Cosine Similarity</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Custom Views</a> </div>
+            <div class="col-12 p-2"> <span class="tag">ML Kit</span><span class="tag">TensorFlow Lite</span><span class="tag">FaceNet</span><span class="tag">CameraX</span><span class="tag">Cosine Similarity</span><span class="tag">Custom Views</span> </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="pt-5" style="">
+  <div class="project pt-5" style="">
     <div class="container">
       <div class="row">
         <div class="mr-auto order-2 order-md-1 d-flex flex-grow-0 col-md-4 align-items-center justify-content-center">
@@ -351,13 +362,13 @@
           <h2>Relaone</h2>
           <p class="">Community app with forums, voting, events, YouTube live streams and a news feed.</p>
           <div class="row text-muted">
-            <div class="col-12 p-2"> <a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Forum</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Voting</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Events</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">YouTube Live</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">News Feed</a> </div>
+            <div class="col-12 p-2"> <span class="tag">Forum</span><span class="tag">Voting</span><span class="tag">Events</span><span class="tag">YouTube Live</span><span class="tag">News Feed</span> </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="pt-5" style="">
+  <div class="project pt-5" style="">
     <div class="container">
       <div class="row">
         <div class="mr-auto order-2 order-md-1 d-flex flex-grow-0 col-md-4 align-items-center justify-content-center">
@@ -380,13 +391,13 @@
           <h2>Face Detection SDK</h2>
           <p class="">In-house face detection and recognition module: CameraX capture, ML Kit detection, TensorFlow Lite embeddings and liveness detection, with multi-angle capture. Reused in three apps.</p>
           <div class="row text-muted">
-            <div class="col-12 p-2"> <a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">CameraX</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">ML Kit</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">TensorFlow Lite</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Liveness Detection</a> </div>
+            <div class="col-12 p-2"> <span class="tag">CameraX</span><span class="tag">ML Kit</span><span class="tag">TensorFlow Lite</span><span class="tag">Liveness Detection</span> </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="pt-5 pb-2" style="">
+  <div class="section-head pt-5 pb-2" style="" id="earlier">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -395,11 +406,11 @@
       </div>
     </div>
   </div>
-  <div class="pt-5" style="">
+  <div class="project pt-5" style="">
     <div class="container">
       <div class="row">
         <div class="mr-auto order-2 order-md-1 d-flex flex-grow-0 col-md-4 align-items-center justify-content-center">
-          <div class="carousel slide carousel-fade" data-ride="carousel" id="carousel" data-interval="1000">
+          <div class="carousel slide carousel-fade" data-ride="carousel" id="carousel" data-interval="5000" data-pause="hover">
             <div class="carousel-inner">
               <div class="carousel-item active"> <img class="d-block img-fluid w-100" src="images/simako/Screenshot_1642138229.png">
               </div>
@@ -430,7 +441,7 @@
           <h2>SIMAKO</h2>
           <p class="">Sistem informasi manajemen kepegawaian, untuk Pegawai Negeri Sipil kabupaten Indramayu.</p>
           <div class="row text-muted">
-            <div class="col-12 p-2"> <a class="btn btn-secondary btn-sm active mx-1 my-1" href="#">MVC</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">AndroidX</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Navigation</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">CameraX<br></a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Coroutine<br></a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Crashlytics<br></a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">FCM<br></a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Animation<br></a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Upload pdf<br></a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Read pdf<br></a> </div>
+            <div class="col-12 p-2"> <span class="tag">MVC</span><span class="tag">AndroidX</span><span class="tag">Navigation</span><span class="tag">CameraX</span><span class="tag">Coroutine</span><span class="tag">Crashlytics</span><span class="tag">FCM</span><span class="tag">Animation</span><span class="tag">Upload pdf</span><span class="tag">Read pdf</span> </div>
           </div>
           <div class="row text-muted">
             <div class="col-md-12">
@@ -443,7 +454,7 @@
       </div>
     </div>
   </div>
-  <div class="pt-5" style="">
+  <div class="project pt-5" style="">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -460,7 +471,7 @@
       </div>
       <div class="row">
         <div class="mr-auto order-2 order-md-1 d-flex flex-grow-0 col-md-4 align-items-center justify-content-center">
-          <div class="carousel slide carousel-fade" data-ride="carousel" id="carousel1" data-interval="2000">
+          <div class="carousel slide carousel-fade" data-ride="carousel" id="carousel1" data-interval="5000" data-pause="hover">
             <div class="carousel-inner">
               <div class="carousel-item active"> <img class="d-block img-fluid w-100" src="images/gabsen/old/1.png">
               </div>
@@ -476,7 +487,7 @@
           </div>
         </div>
         <div class="mr-auto order-2 order-md-1 d-flex flex-grow-0 col-md-4 align-items-center justify-content-center">
-          <div class="carousel slide carousel-fade" data-ride="carousel" id="carousel2" data-interval="2000">
+          <div class="carousel slide carousel-fade" data-ride="carousel" id="carousel2" data-interval="5000" data-pause="hover">
             <div class="carousel-inner">
               <div class="carousel-item active"> <img class="d-block img-fluid w-100" src="images/gabsen/new/1.png">
               </div>
@@ -495,7 +506,7 @@
           <h2>GAbsen</h2>
           <p class="">Aplikasi presensi untuk Pegawai Negeri Sipil kota Probolinggo. Menggunakan autentikasi wajah dan lokasi</p>
           <div class="row text-muted">
-            <div class="col-12 p-2"> <a class="btn btn-secondary btn-sm active mx-1 my-1" href="#">MVC</a><a class="btn btn-secondary active btn-sm mx-1" href="#">AndroidX</a><a class="btn btn-secondary active btn-sm mx-1" href="#">Navigation</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Fused Location<br></a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Mapbox<br></a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Notification</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">AlarmManager</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">JobScheduler</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Crashlytics</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Material Design</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Dark Mode<br></a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">OpenCV</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Face Recognition</a> </div>
+            <div class="col-12 p-2"> <span class="tag">MVC</span><span class="tag">AndroidX</span><span class="tag">Navigation</span><span class="tag">Fused Location</span><span class="tag">Mapbox</span><span class="tag">Notification</span><span class="tag">AlarmManager</span><span class="tag">JobScheduler</span><span class="tag">Crashlytics</span><span class="tag">Material Design</span><span class="tag">Dark Mode</span><span class="tag">OpenCV</span><span class="tag">Face Recognition</span> </div>
           </div>
           <div class="row text-muted">
             <div class="col-md-12">
@@ -508,11 +519,11 @@
       </div>
     </div>
   </div>
-  <div class="pt-5" style="">
+  <div class="project pt-5" style="">
     <div class="container">
       <div class="row">
         <div class="mr-auto order-2 order-md-1 d-flex justify-content-center align-items-center flex-grow-0 col-md-4">
-          <div class="carousel slide carousel-fade" data-ride="carousel" id="carouselcenideni" data-interval="1000">
+          <div class="carousel slide carousel-fade" data-ride="carousel" id="carouselcenideni" data-interval="5000" data-pause="hover">
             <div class="carousel-inner">
               <div class="carousel-item active"> <img class="d-block img-fluid w-100" src="images/cenideni/0.png">
               </div>
@@ -545,7 +556,7 @@
           <h2>CeniDeni<br></h2>
           <p class="">Cegah dini dan deteksi dini, untuk kabupaten Malang. Aplikasi pelaporan dan mitigasi bencana menggunakan GPS dan kamera.<br></p>
           <div class="row text-muted">
-            <div class="col-12 p-2"> <a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">MVC</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">AndroidX</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Navigation</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">CameraX<br></a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Google Map<br></a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Fused Location<br></a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Place Picker<br></a> </div>
+            <div class="col-12 p-2"> <span class="tag">MVC</span><span class="tag">AndroidX</span><span class="tag">Navigation</span><span class="tag">CameraX</span><span class="tag">Google Map</span><span class="tag">Fused Location</span><span class="tag">Place Picker</span> </div>
           </div>
           <div class="row text-muted">
             <div class="col-md-12">
@@ -558,11 +569,11 @@
       </div>
     </div>
   </div>
-  <div class="pt-5" style="" id="section_museum">
+  <div class="project pt-5" style="" id="section_museum">
     <div class="container">
       <div class="row">
         <div class="col-md-4 mr-auto order-2 order-md-1 d-flex justify-content-center align-items-center flex-grow-0">
-          <div class="carousel slide carousel-fade" data-ride="carousel" id="carouselmuseum" data-interval="1000">
+          <div class="carousel slide carousel-fade" data-ride="carousel" id="carouselmuseum" data-interval="5000" data-pause="hover">
             <div class="carousel-inner">
               <div class="carousel-item active"> <img class="d-block img-fluid w-100" src="images/museum/0.png">
               </div>
@@ -593,7 +604,7 @@
           <h2>Museum Mandhilaras<br></h2>
           <p class="">Showcase museum Mandhilaras kabupaten Pamekasan<br></p>
           <div class="row text-muted">
-            <div class="col-12 p-2"> <a class="btn btn-secondary active btn-sm my-1 mx-1" href="#">MVC</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">AndroidX</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Navigation</a> </div>
+            <div class="col-12 p-2"> <span class="tag">MVC</span><span class="tag">AndroidX</span><span class="tag">Navigation</span> </div>
           </div>
           <div class="row text-muted">
             <a href="https://play.google.com/store/apps/details?id=com.mandhilaras.museum" target="_blank">
@@ -604,11 +615,11 @@
       </div>
     </div>
   </div>
-  <div class="pt-5" style="" id="section_museum">
+  <div class="project pt-5" style="" id="section_museum">
     <div class="container">
       <div class="row">
         <div class="col-md-4 mr-auto order-2 order-md-1 d-flex justify-content-center align-items-center flex-grow-0">
-          <div class="carousel slide carousel-fade" data-ride="carousel" id="carouselpasspor" data-interval="1000">
+          <div class="carousel slide carousel-fade" data-ride="carousel" id="carouselpasspor" data-interval="5000" data-pause="hover">
             <div class="carousel-inner">
               <div class="carousel-item active"> <img class="d-block img-fluid w-100" src="images/epasspor/1.png">
               </div>
@@ -637,13 +648,13 @@
           <h2>epasspor<br></h2>
           <p class="">Sistem pelacakan pengunjung untuk kabupaten Lebong<br></p>
           <div class="row text-muted">
-            <div class="col-12 p-2"> <a class="btn btn-secondary active btn-sm my-1 mx-1" href="#">MVC</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">AndroidX</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Navigation</a> </div>
+            <div class="col-12 p-2"> <span class="tag">MVC</span><span class="tag">AndroidX</span><span class="tag">Navigation</span> </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="pt-5 pb-2" style="" id="section_skp">
+  <div class="section-head pt-5 pb-2" style="" id="section_skp">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -652,7 +663,7 @@
       </div>
     </div>
   </div>
-  <div class="pt-5 pb-5" style="" id="section_skp">
+  <div class="project pt-5 pb-5" style="" id="section_skp">
     <div class="container">
       <div class="row">
         <div class="mr-auto order-2 order-md-1 d-flex justify-content-center align-items-center flex-grow-0 col-md-4">
@@ -679,7 +690,7 @@
           <h2>Kamus<br></h2>
           <p class="">Kamus indonesia inggris luring</p>
           <div class="row text-muted">
-            <div class="col-12 p-2"> <a class="btn btn-secondary active btn-sm my-1 mx-1" href="#">MVVM</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">AndroidX</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Navigation</a><a class="btn btn-secondary active btn-sm my-1 mx-1" href="#">DI</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Material Design</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Crashlytics</a> </div>
+            <div class="col-12 p-2"> <span class="tag">MVVM</span><span class="tag">AndroidX</span><span class="tag">Navigation</span><span class="tag">DI</span><span class="tag">Material Design</span><span class="tag">Crashlytics</span> </div>
           </div>
           <div class="row text-muted">
             <div class="col-md-12">
@@ -692,7 +703,7 @@
       </div>
     </div>
   </div>
-  <div class="pt-5" style="">
+  <div class="project pt-5" style="">
     <div class="container">
       <div class="row">
         <div class="mr-auto order-2 order-md-1 d-flex flex-grow-0 col-md-4 align-items-center justify-content-center">
@@ -717,7 +728,7 @@
           <h2>Risalah Amaliyah</h2>
           <p class="">Reading app for prayers and spiritual texts, built with Kotlin Multiplatform and Compose Multiplatform. Typography-first, with eye-comfort themes and an adaptive single- or dual-pane layout.</p>
           <div class="row text-muted">
-            <div class="col-12 p-2"> <a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Kotlin Multiplatform</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Compose Multiplatform</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Koin</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Navigation Compose</a><a class="btn btn-secondary active btn-sm mx-1 my-1" href="#">Firestore</a> </div>
+            <div class="col-12 p-2"> <span class="tag">Kotlin Multiplatform</span><span class="tag">Compose Multiplatform</span><span class="tag">Koin</span><span class="tag">Navigation Compose</span><span class="tag">Firestore</span> </div>
           </div>
         </div>
       </div>
@@ -726,6 +737,7 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous" style=""></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="porto-v2.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,165 @@
+/* Portfolio redesign layer on top of porto.css (Bootstrap 4.3.1). */
+:root {
+  --bg: #f4f6fb;
+  --card: #ffffff;
+  --ink: #1f2937;
+  --muted: #6b7280;
+  --accent: #4f70ce;
+  --accent-soft: #eef2ff;
+  --bezel: #111827;
+  --panel: linear-gradient(160deg, #e8edfb 0%, #dfe6f8 100%);
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 400;
+}
+
+/* Navigation */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  background: rgba(255, 255, 255, .92);
+  backdrop-filter: saturate(180%) blur(8px);
+  box-shadow: 0 1px 0 rgba(17, 24, 39, .06);
+}
+.navbar .nav-link { font-weight: 500; }
+.navbar .nav-link.active { color: var(--accent) !important; }
+
+/* Hero */
+.hero { padding: 3.5rem 0 1rem; }
+.hero h1 { font-weight: 700; font-size: 2.5rem; letter-spacing: -.02em; margin-bottom: .5rem; }
+.hero .lead { color: var(--muted); font-weight: 400; max-width: 40rem; }
+.jump { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1.25rem; }
+.jump a {
+  padding: .45rem 1rem;
+  border-radius: 999px;
+  background: var(--card);
+  color: var(--ink);
+  font-weight: 500;
+  font-size: .9rem;
+  box-shadow: 0 1px 2px rgba(17, 24, 39, .08);
+  text-decoration: none;
+}
+.jump a:hover, .jump a:focus { background: var(--accent); color: #fff; }
+
+/* Section headings */
+.section-head { scroll-margin-top: 4.5rem; }
+.section-head h1 {
+  font-weight: 700;
+  font-size: 1.75rem;
+  letter-spacing: -.01em;
+  padding-left: .85rem;
+  border-left: 4px solid var(--accent);
+}
+
+/* Project cards */
+.project > .container > .row {
+  background: var(--card);
+  border-radius: 20px;
+  box-shadow: 0 1px 2px rgba(17, 24, 39, .05), 0 10px 30px rgba(17, 24, 39, .06);
+  padding: 1.5rem .75rem;
+  margin-left: 0;
+  margin-right: 0;
+  align-items: center;
+}
+/* A block with several rows (GAbsen Before/After labels) reads as one card */
+.project > .container > .row:not(:last-child) { border-radius: 20px 20px 0 0; padding-bottom: 0; box-shadow: none; }
+.project > .container > .row + .row { border-radius: 0 0 20px 20px; padding-top: .5rem; }
+@media (min-width: 768px) {
+  /* Pull the text next to the phone instead of leaving an empty column */
+  .project .mr-auto { margin-right: 0 !important; }
+  .project .row > .col-md-6 { flex: 1 1 0; max-width: none; }
+}
+.project h2 { font-weight: 700; font-size: 1.6rem; letter-spacing: -.01em; margin-bottom: .35rem; }
+.project h4 { font-weight: 600; font-size: 1rem; color: var(--muted); }
+.project p { line-height: 1.65; }
+.project p.text-muted.mb-1 { font-weight: 600; font-size: .9rem; margin-bottom: .75rem !important; }
+
+/* Screenshot column: tinted panel + phone frame */
+.project .carousel { width: 100%; }
+.phone {
+  width: 100%;
+  max-width: 290px;
+  margin: 0 auto;
+  padding: 1.75rem 1.5rem 1rem;
+  border-radius: 18px;
+  background: var(--panel);
+}
+.phone .carousel {
+  border: 9px solid var(--bezel);
+  border-radius: 34px;
+  overflow: hidden;
+  background: var(--bezel);
+  box-shadow: 0 18px 40px rgba(17, 24, 39, .25);
+}
+
+/* Carousel arrows: dark round buttons, readable on white screens */
+.phone .carousel-control-prev,
+.phone .carousel-control-next {
+  top: 50%;
+  bottom: auto;
+  width: 34px;
+  height: 34px;
+  margin: 0 6px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: rgba(17, 24, 39, .6);
+  opacity: 0;
+  transition: opacity .2s;
+}
+.phone .carousel:hover .carousel-control-prev,
+.phone .carousel:hover .carousel-control-next,
+.phone .carousel-control-prev:focus,
+.phone .carousel-control-next:focus { opacity: .9; }
+@media (hover: none) {
+  .phone .carousel-control-prev,
+  .phone .carousel-control-next { opacity: .75; }
+}
+.phone .carousel-control-prev-icon,
+.phone .carousel-control-next-icon { width: 14px; height: 14px; }
+
+/* Dots + caption */
+.shot-dots { display: flex; justify-content: center; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
+.shot-dots button {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: #b9c2d6;
+  transition: width .2s, background .2s;
+}
+.shot-dots button.active { width: 20px; background: var(--accent); }
+.shot-dots button:focus { outline: 2px solid var(--accent); outline-offset: 2px; }
+.shot-caption { margin: .5rem 0 0; min-height: 1.3em; text-align: center; font-size: .85rem; font-weight: 500; color: var(--muted); }
+.shot-caption:empty { display: none; }
+
+/* Tech tags */
+.tag {
+  display: inline-block;
+  margin: .2rem;
+  padding: .25rem .7rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: #3949ab;
+  font-size: .8rem;
+  font-weight: 500;
+}
+
+/* Play badge */
+.project img[src$="Google_Play-Logo.png"] { width: 150px !important; max-width: 100%; margin-top: .25rem; }
+
+@media (max-width: 767.98px) {
+  .hero { padding-top: 2rem; }
+  .hero h1 { font-size: 2rem; }
+  .project > .container > .row { padding: 1rem .25rem 1.5rem; }
+  .phone { max-width: 260px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel-item, .shot-dots button, .phone .carousel-control-prev, .phone .carousel-control-next { transition: none !important; }
+}
