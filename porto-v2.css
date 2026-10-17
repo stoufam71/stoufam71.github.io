@@ -10,6 +10,10 @@
   --panel: linear-gradient(160deg, #e8edfb 0%, #dfe6f8 100%);
 }
 
+html { scrollbar-gutter: stable; }
+
+h1, h2, h3, h4, h5, h6, .display-1 { font-family: inherit; }
+
 body {
   background: var(--bg);
   color: var(--ink);
