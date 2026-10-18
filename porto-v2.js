@@ -18,7 +18,8 @@ $(function () {
       // alt is "App: Screen name"; show only the screen name
       $cap.text(($items.eq(i).find('img').attr('alt') || '').replace(/^[^:]*:\s*/, ''));
     }
-    $c.wrap('<div class="phone"></div>').parent().append($dots, $cap);
+    // tablet carousels reuse the phone frame styles with a wider landscape override
+    $c.wrap($c.hasClass('tablet-carousel') ? '<div class="phone tablet"></div>' : '<div class="phone"></div>').parent().append($dots, $cap);
     $c.on('slide.bs.carousel', function (e) { sync(e.to); });
     sync(Math.max(0, $items.index($items.filter('.active'))));
     // Bootstrap starts data-ride carousels on window load; dropping the attribute keeps them still
